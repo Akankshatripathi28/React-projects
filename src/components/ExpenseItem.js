@@ -1,8 +1,8 @@
-import userEvent from "@testing-library/user-event";
+//import userEvent from "@testing-library/user-event";
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate.js";
 
-const ExpensiveItem = (props) => {
+const ExpenseItem = (props) => {
   return (
     <div className="expense-item">
       <ExpenseDate date={props.date} />
@@ -14,4 +14,4 @@ const ExpensiveItem = (props) => {
   );
 };
 
-export default ExpensiveItem;
+export default ExpenseItem;

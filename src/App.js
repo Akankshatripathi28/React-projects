@@ -1,5 +1,6 @@
-import ExpensiveItem from "./components/ExpenseItem";
 //import Clock from "./components/Clock";
+
+import Expenses from "./components/Expenses";
 
 function App() {
   /*return (
@@ -33,33 +34,9 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-
   return (
     <>
-      {expenses?.map((item) => {
-        return (
-          <ExpensiveItem
-            title={item.title}
-            date={item.date}
-            amount={item.amount}
-          ></ExpensiveItem>
-        );
-      })}
-      {/* <ExpensiveItem
-        title={expenses[1].title}
-        date={expenses[1].date}
-        amount={expenses[1].amount}
-      ></ExpensiveItem>
-      <ExpensiveItem
-        title={expenses[2].title}
-        date={expenses[2].date}
-        amount={expenses[2].amount}
-      ></ExpensiveItem>
-      <ExpensiveItem
-        title={expenses[3].title}
-        date={expenses[3].date}
-        amount={expenses[3].amount}
-      ></ExpensiveItem> */}
+      <Expenses item={expenses} />
     </>
   );
 }
